@@ -29,7 +29,7 @@ def help(update: Update, context: CallbackContext):
 
 def run_out(update: Update, context: CallbackContext):
 	update.message.reply_text("executing command")
-	os.startfile("lol.exe")
+	os.startfile("lol.exe") #Replace lol.exe with the name of the .exe file (the file should be in the same directory as this file)
 
 def unknown(update: Update, context: CallbackContext):
     update.message.reply_text("Sorry '%s' is not a valid command" % update.message.text)
